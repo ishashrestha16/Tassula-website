@@ -56,16 +56,6 @@ I researched three real animal adoption websites for inspiration:
  
 I will use these websites as inspiration when planning the Tassula Website.
  
-## 6. Design Ideas
- 
-The website will follow the customer's requested colours:
- 
-- Spruce: #12343b
-- Pale Mint: #eef6f4
-- Orange: #e8742a
- 
-The website will have simple navigation and clear information.
- 
 ## 7. Project Scope
  
-For E1, I will create four HTML pages with basic content and working navigation.
+For E1, I will create four HTML pages with basic content and working navigation. I will add the Designs and the color and how the website will be. 
