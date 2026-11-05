@@ -24,7 +24,7 @@ The website is intended for:
  
 The website should also be accessible to people who use screen readers.
  
-## 4. Website Pages
+## 4. Website Pages and Main Headings
  
 ### Home - index.html
 H1: Welcome to Tassula ry
