@@ -1,0 +1,149 @@
+/* Tassula ry - Shared website styles */
+
+/* Colours, fonts and spacing */
+:root {
+    color-scheme: light;
+
+    --background: #eef6f4;
+    --text: #12343b;
+    --accent: #e8742a;
+    --surface: #ffffff;
+    --focus: #12343b;
+
+    --font-heading: "Nunito", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --background: #12343b;
+        --text: #eef6f4;
+        --accent: #e8742a;
+        --surface: #1b454d;
+        --focus: #eef6f4;
+    }
+}
+
+/* Basic page layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: var(--spacing-medium);
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header,
+footer {
+    padding: var(--spacing-medium);
+}
+
+main {
+    padding: var(--spacing-medium);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    line-height: 1.3;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+}
+
+nav a {
+    display: inline-block;
+    padding: var(--spacing-small);
+    color: var(--text);
+}
+
+a {
+    color: var(--text);
+    overflow-wrap: anywhere;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+    max-width: 100%;
+    font: inherit;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: var(--spacing-small) var(--spacing-medium);
+    cursor: pointer;
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+}
+
+/* Decorative detail */
+header {
+    border-bottom: 3px solid var(--accent);
+}
+
+/* Desktop layout */
+@media (min-width: 700px) {
+    body {
+        padding: var(--spacing-large);
+    }
+
+    main {
+        padding: var(--spacing-large);
+    }
+
+    nav {
+        gap: var(--spacing-medium);
+    }
+}
