@@ -20,7 +20,7 @@ The website uses three main colours:
 | Pale mint | `#eef6f4` | Main background and light sections |
 | Orange | `#e8742a` | Decorative accents and highlights |
 
-Dark spruce and pale mint create a contrast ratio of approximately **12:1**, which is higher than the WCAG AA requirement of 4.5:1 for normal text.
+**Main text contrast ratio:** Dark spruce (`#12343b`) on pale mint (`#eef6f4`) is approximately **12:1**, higher than the WCAG AA requirement of 4.5:1 for normal text.
 
 Orange is mainly used for decorative details and highlights. It is not used for small text on the pale mint background because that colour combination does not provide enough contrast.
 
@@ -41,11 +41,11 @@ Clear heading sizes, readable body text and enough spacing help visitors underst
 
 The layout is designed to be simple and easy to navigate.
 
-- The website should work on small mobile screens as well as larger desktop screens.
-- Images should resize to fit the available screen width.
-- Navigation should be clear and consistent across all four pages.
-- Links and form controls should have visible keyboard focus.
-- Text and background colours should have sufficient contrast in both light and dark modes.
+- The website works on small mobile screens as well as larger desktop screens.
+- Images resize to fit the available screen width.
+- Navigation is clear and consistent across all four pages.
+- Links and form controls have visible keyboard focus.
+- Text and background colours have sufficient contrast in both light and dark modes.
 - Semantic HTML and descriptive image alternative text help visitors using screen readers.
 
 Dark mode follows the visitor's device colour-scheme preference, so visitors do not need to change the website settings manually.
