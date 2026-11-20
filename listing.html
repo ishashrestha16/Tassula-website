@@ -1,62 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adoption Enquiry- Tassula ry</title>
+    <title>Animals looking for homes - Tassula ry</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>Adoption Enquiry</h1>
+    <h1>Animals looking for homes</h1>
+    <p>Meet our lovely animals waiting for a new home.</p>
 </header>
-
 
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">Adoption</a>
-    <a href="listing.html">Enquiry</a>
+    <a href="listing.html">Animals</a>
     <a href="contact.html">About Us</a>
 </nav>
 
 <main>
-    <p>If you are interested in adopting an animal, please fill out the form below and we will get back to you as soon as possible.</p>
+    <h2>Find your new companion</h2>
 
-    <h2>Your Information</h2>
+    <label for="animal-search">Search animals by name or type:</label>
+    <input
+        type="search"
+        id="animal-search"
+        placeholder="For example, cat or Julie"
+    >
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <br><br>
+    <p id="result-count" aria-live="polite">
+        Showing 3 of 3 animals.
+    </p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <br><br>
+    <section id="animal-list" aria-label="Available animals">
 
-        <label for="animal">Which animal are you interested in?</label>
-        <input type="text" id="animal" name="animal" required>
-        
-        <br><br>
+        <article class="animal-card">
+            <h3>Julie - Cat</h3>
+            <p>Julie is a sweetheart, who loves playing and cuddling. Can be stubborn at times but very affectionate.</p>
+        </article>
 
-        <label for="message">Tell us about yourself:</label>
-        <textarea id="message" name="message" rows="4" cols="25"></textarea>
-        
-        <br><br>
+        <article class="animal-card">
+            <h3>Max - Dog</h3>
+            <p>Max is a goofball who loves attention and playtime. He is very friendly and great with children.</p>
+        </article>
 
-        <input type="submit" value="Submit Enquiry">
+        <article class="animal-card">
+            <h3>Snowball - Rabbit</h3>
+            <p>Snowball is a not so gentle soft fur ball who loves carrots and has a soft spot for quiet company.</p>
+        </article>
 
-        <br><br>
-    
-    </form>
+    </section>
+
+    <p id="no-results" hidden>No animals match your search.</p>
 </main>
 
 <footer>
-    <p>Tassula ry- Helping animals find loving homes.</p>
+    <p>Tassula ry - Helping animals find loving homes.</p>
 </footer>
-    
+
 </body>
 </html>
