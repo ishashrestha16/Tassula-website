@@ -29,3 +29,6 @@ AI helped me understand the tasks and guided me through the coding process step 
 I created a JavaScript file called `script.js` and linked it to `listing.html` using the `defer` attribute. I added a search feature that allows visitors to find animals by name or type. The page also displays how many animals match the search and shows a message when no animals match.
 
 I tested the search feature in the browser and confirmed that it works using the keyboard.
+
+## 7. E3 progress – 21 November 2026
+I added an adoption enquiry form to the contact page. I used JavaScript to validate the form, display error messages and save enquiries in the browser using localStorage. I also added an Adoption Help popover that opens and closes with a real button. I tested the form and popover, including keyboard operation.

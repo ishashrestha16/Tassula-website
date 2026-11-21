@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us- Tassula ry</title>
@@ -35,7 +36,46 @@
 
     <h2>Contact Us</h2>
     <p>If you are interested in adopting an animal, please visit our enquiry page.</p>
-    <p><a href="listing.html">Go to the adoption enquiry page</a></p>
+    <p><a href="listing.html">Animals</a></p>
+
+
+<section>
+    <button type="button" id="help-button"
+        aria-expanded="false" aria-controls="adoption-help">
+    Adoption Help
+</button>
+
+<div id="adoption-help" hidden>
+    <p>Thinking about adopting? Please tell us which animal interests you and a little about your home and experience with animals.</p>
+    <p>Our volunteers will be happy to help you learn about the adoption process.</p>
+</div>
+
+    <h2>Adoption Enquiry</h2>
+    <p>If you are interested in adopting an animal, please fill out the form below. We would love to hear from you!</p>
+
+    <form id="enquiry-form" novalidate>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required>
+        <p id="name-error" class="error-message"></p>
+
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" required>
+        <p id="email-error" class="error-message"></p>
+
+        <label for="animal">Which animal are you interested in?</label>
+        <input type="text" id="animal" name="animal" required>
+        <p id="animal-error" class="error-message"></p>
+
+        <label for="message">Tell us about yourself:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <p id="message-error" class="error-message"></p>
+
+        <button type="submit">Save enquiry</button>
+    </form>
+
+    <p id="form-status" aria-live="polite"></p>
+</section>
+
 </main>
 
 <footer>
